@@ -18,6 +18,10 @@
 
 #include <rtthread.h>
 
+#ifdef RT_USING_FAL
+#define FDB_USING_FAL_MODE
+#endif
+
 #ifdef RT_USING_DFS
 #if RT_VER_NUM >= 0x40100
 #include <sys/stat.h>
